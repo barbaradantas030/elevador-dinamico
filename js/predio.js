@@ -1,0 +1,1 @@
+// JS do elevador - lógica resumida para estrutura

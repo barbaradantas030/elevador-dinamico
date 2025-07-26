@@ -1,0 +1,1 @@
+// JS da rua - lógica resumida para estrutura
