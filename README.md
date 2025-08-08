@@ -1,3 +1,8 @@
+![Tamanho do repositório](https://img.shields.io/github/repo-size/barbaradantas030/ELEVADOR-DINAMICO?style=plastic)
+![Total de arquivos](https://img.shields.io/github/directory-file-count/barbaradantas030/ELEVADOR-DINAMICO?type=file&style=plastic)
+![Licença](https://img.shields.io/github/license/barbaradantas030/altera-fundo?style=plastic)
+
+
 # Elevador Dinâmico
 
 <p align="center">
