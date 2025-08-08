@@ -1,6 +1,198 @@
+/* CSS Gerais */
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-  background-color: #000;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  margin: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 100vh;
+    font-family: 'VT323', monospace;
+}
+
+.calcada {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex: 1
+}
+
+/* CSS dos controles */
+
+.controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100px;
+    background-color: #222;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.controles .mostrador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #22F522;
+    border: 10px solid #666;
+    height: 100%;
+    width: 200px;
+    border-radius: 8px;
+    font-size: 2.5rem;
+}
+
+.controles button {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    font-size: 2rem;
+    border: 6px solid #999;
+}
+
+.controles button.destaque {
+    border-color: yellow;
+}
+
+/* CSS rua */
+
+.rua {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: #777;
+    gap: 30px;
+    border-top: 10px solid white;
+}
+
+.rua>.faixa {
+    flex: 1;
+    height: 10px;
+    background-color: #DDD;
+}
+
+/* CSS árvore */
+
+.arvore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arvore::before {
+    content: "";
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.arvore::after {
+    content: "";
+    width: 20px;
+    height: 100px;
+    background-color: #4d3131;
+}
+
+/* CSS Prédio */
+
+.predio {
+    display: flex;
+    width: 500px;
+    height: 100%;
+    background-color: #319DA0;
+    gap: 10px;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    background-color: #0006;
+    flex: 2;
+}
+
+.andar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1;
+    border-bottom: 2px solid white;
+}
+
+.porta {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    width: 40%;
+    height: 80%;
+    background-color: brown;
+    border: solid 5px #FFF6;
+    border-bottom-width: 0;
+}
+
+.porta::after {
+    content: "";
+    width: 30%;
+    height: 15%;
+    border-radius: 5px;
+    background-color: #FFF9;
+}
+
+.terreo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border-bottom: 2px solid transparent;
+}
+
+.janela {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 5px #FFFC;
+    background-color: #068888;
+    height: 50%;
+    width: 40%;
+}
+
+.janela::after {
+    content: "";
+    position: absolute;
+    border: 1px solid #FFFC;
+    top: 0;
+    height: 100%;
+    width: 1px;
+}
+
+.janela::before {
+    content: "";
+    position: absolute;
+    border: 1px solid #FFFC;
+    left: 0;
+    width: 100%;
+    height: 1px;
+}
+
+.poco {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #fff9;
+    flex: 1;
+}
+
+.elevador {
+    position: absolute;
+    border: 3px solid black;
+    border-top-width: 10px;
+    background-color: #FFFA;
+    width: 80%;
+    bottom: 0;
 }
